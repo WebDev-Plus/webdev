@@ -1,0 +1,89 @@
+---
+title: Virtualous Tech
+timezone: America/New_York
+collections:
+  gallery:
+    title: Clients
+    output: false
+  posts:
+    title: Posts
+    output: true
+  blog_tags:
+    title: Tags
+    output: true
+  tweets:
+    title: Testimonials
+    output: false
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/blog/:title/"
+    layout: post
+    image: 
+    description: 
+    button:
+      title: 
+      url: 
+- scope:
+    path: ''
+    type: blog_tags
+  values:
+    layout: tag
+- scope:
+    path: ''
+    type: gallery
+  values:
+    image: 
+    link: 
+url: https://virtualoustech.com
+description: Creating a beautiful, fully-functional, and easy to navigate a website for your business is what we do, we collaborate with you in order to produce the website that will fully represent the culture of your company.
+permalink: pretty
+exclude:
+- Gruntfile.js
+- Gemfile.lock
+- package.json
+- README*
+- node_modules
+- ".gitignore"
+plugins:
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-redirect-from
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true
+highlighter: rouge
+excerpt_separator: |2+
+
+
+
+sass:
+  sass_dir: styles/
+  style: compressed
+per_page: 12
+date_format: "%b %d, %Y"
+google_analytics: UA-1666437-33
+twitter:
+  username: virtualoustech
+logo: "/assets/logo.png"
+future: false
+header_nav:
+  Blog: "/blog/"
+  Clients: "/gallery/"
+  Pricing: "/plans/"
+  
+footer_nav:
+  Features: "/features/"
+  Privacy: "/privacy/"
+  Terms: "/terms/"
+  
+  
+scripts: |-
+  <script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script><script>window.Beacon('init', '13d71c30-bf3c-49d8-a515-60646ded4459')</script>
+  <script async src='https://r.wdfl.co/rw.js' data-rewardful='6def54'></script>
